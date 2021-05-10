@@ -1,7 +1,7 @@
 {
   "name": "meet_analyzer_rest_api",
   "version": "1.0.0",
-  "description": "",
+  "description": " ",
   "main": "index.js",
   "dependencies": {
     "dotenv": "^8.2.0",
