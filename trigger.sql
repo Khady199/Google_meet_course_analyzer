@@ -1,7 +1,7 @@
 CREATE TRIGGER evaluation  AFTER INSERT
  --creation du trigger
    
-      --AFTER INSERT sert à définir quand et comment le trigger est declancher
+      --AFTER INSERT sert à définir quand et comment le trigger est déclenché 
   
     ON TABLE evalution FOR EACH ROW
        --on définit sur quelle table le trigger est attaché
