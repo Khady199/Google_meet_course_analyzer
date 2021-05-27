@@ -1,36 +1,12 @@
 
 create database GoogleAnalyzer;
-use GoogleAnalyzer;
-
-CREATE  TABLE Classe (
-    CodeClasse VARCHAR(50) PRIMARY KEY,
-    NombreEtudiant INT,
-    idEtudiant VARCHAR(30),
-   CONSTRAINT fk_Clas_idEtudiant_Etudi FOREIGN KEY(idEtudiant)
-    REFERENCES Etudiant(idEtudiant)
-);
+use GoogleAnalyzer
 
 CREATE  TABLE Matiere (
-    IdMatiere VARCHAR(50) PRIMARY KEY,
+    IdMatiere INT PRIMARY KEY,
     NomMatiere VARCHAR(50),
     Coefficient INT
 );
-
-
-
-CREATE TABLE Etudiant (
-    idEtudiant VARCHAR(30) PRIMARY KEY,
-    NomEtudiant VARCHAR(50),
-    PrenomEtudiant VARCHAR(50),
-    Email VARCHAR(50)
-);
-
-
-CREATE  TABLE Choix_Etudi_Matier(
-     IdEtudiant VARCHAR(30),
-     IdMatiere VARCHAR(50),
-     NombreDeChoix INT
- );
 
 CREATE  TABLE Seance (
     IdSeance INT auto_increment PRIMARY KEY,
@@ -41,10 +17,12 @@ CREATE  TABLE Seance (
     Duree TIME
 );
 
-CREATE  TABLE EvaluSeance (
-    idEtudiant VARCHAR(30),
-    idSeance INT,
-    NombrEvaluation INT
+CREATE  TABLE Classe (
+    CodeClasse VARCHAR(50) PRIMARY KEY,
+    NombreEtudiant INT,
+    IdMatiere INT,
+    CONSTRAINT fk_Classe_Matiere FOREIGN KEY (IdMatiere)
+    REFERENCES Matiere (IdMatiere)
 );
 
 CREATE TABLE Professeur(
@@ -52,13 +30,28 @@ CREATE TABLE Professeur(
     NomProf VARCHAR(50),
     PrenomProf VARCHAR(50),
     Email VARCHAR(100),
-    idMatiere VARCHAR(50),
     CodeClasse VARCHAR(50),
-    CONSTRAINT  fk_Prof_idMatiere_Matie FOREIGN KEY(IdMatiere)
-    REFERENCES Matiere(IdMatiere) ON DELETE CASCADE,
-    CONSTRAINT fk_Prof_CodeClasse_Class FOREIGN KEY(CodeClasse)
-    REFERENCES Classe(CodeClasse)
+    CONSTRAINT fk_Prof_Classe FOREIGN KEY (CodeClasse)
+    REFERENCES Classe (CodeClasse)
 );
+
+CREATE TABLE Etudiant (
+    IdEtudiant INT PRIMARY KEY,
+    NomEtudiant VARCHAR(50),
+    PrenomEtudiant VARCHAR(50),
+    Email VARCHAR(50)
+);
+
+CREATE  TABLE Evaluation (
+    IdEtudiant INT primary key,
+    IdSeance INT primary key,
+    NombrEvaluation INT,
+    CONSTRAINT fk_Eval_Etud FOREIGN KEY (IdEtudiant)
+    REFERENCES Classe (IdEtudiant),
+    CONSTRAINT fk_Eval_Seance FOREIGN KEY (IdSeance)
+    REFERENCES Classe (IdSeance)
+);
+
 
 -- l'insertion se fera automatiquement 
 
