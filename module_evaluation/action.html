@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<style type="text/css">
+		body{
+			background-image:url(eau6.jpg); 
+		}
+
+		#rep1{
+	background-color: #A9EAFE;
+	margin-left: 10%;
+	margin-right: 10%;
+	border-radius: 50px;
+	}
+
+	.rt{
+		border-radius: 25px;
+		background-color: #DFF2FF;
+	}
+
+
+		</style>
+	<script>
+		function noter(){
+			var point1=point2=point3=point4=point5=point6=point7=point8=point9=point10=0,resultat;
+			if (document.form.rp1.checked || document.form.rp11.checked ||document.form.rp12.checked || document.form.rp13.checked ) {
+				point1=point1+1;
+			}
+			if (document.form.rp2.checked ||document.form.rp21.checked || document.form.rp22.cheked) {
+				point2=point2+1;
+			}
+			if (document.form.rp31.checked || document.form.rp3.checked ||document.form.rp32.checked) {
+				point3=point3+1;
+			}
+			if (document.form.rp42.checked || document.form.rp4.checked ||document.form.rp41.checked) {
+				point4=point4+1;
+			}
+			if (document.form.rp52.checked || document.form.rp5.checked || document.form.rp51.checked) {
+				point5=point5+1;
+			}
+			if (document.form.rp61.checked || document.form.rp6.checked || document.form.rp62.checked) {
+				point6=point6+1;
+			}
+			if (document.form.rp7.checked || document.form.rp71.cheked) {
+				point7=point7+1;
+			}
+			if (document.form.rp81.checked || document.form.rp8.checked){
+				point8=point8+1;
+			}
+			if (document.form.rp9.checked || document.form.rp91.checked || document.form.rp92.cheked){
+				point9=point9+1;
+			}
+			if (document.form.rp101.checked || document.form.rp10.checked || document.form.rp102.checked){
+				point10=point10+1;
+			}
+			
+			resultat=point10+point9+point8+point7+point6+point5+point4+point3+point2+point1;
+			alert(+resultat+" "+'sur 10 ont obtenu une réponse');
+		}
+	</script>
+</head>
+<body>
+		
+
+				<div>
+
+					<form name="form" id="rep1">
+							<div class="rt">
+							<p><b>1.Comment qualifierez-vous la charge de travail demandée par le cours?</b></p>
+							<input type="checkbox" name="rp1">Beaucoup trop importante
+							<br><input type="checkbox" name="rp11">Trop importante
+							<br><input type="checkbox" name="rp12"> Beaucoup trop insuffisante
+							<br><input type="checkbox" name="rp13">Trop insuffisante
+						</div>
+
+							
+						<p><b>2.Le cours a-t-il répondu à vos attentes?</b></p>
+						<input type="checkbox" name="rp2">Extrêmement bien répondu
+						<br><input type="checkbox" name="rp21">Assez bien répondu
+						<br><input type="checkbox" name="rp22">Pas du tout répondu
+					
+						<div class="rt">
+						<p><b>3.Le cours a-t-il contribué à votre connaissance en la matière</b></p>
+						<input type="checkbox" name="rp3">Enormément contribué
+						<br><input type="checkbox" name="rp31">Plutôt contribué
+						<br><input type="checkbox" name="rp32">Pas du tout contribué
+						</div>
+
+						<p><b>4.Comment évaluerez-vous le cours?</b></p>
+						<input type="checkbox" name="rp4">Très facile
+						<br><input type="checkbox" name="rp41">Assez facile
+						<br><input type="checkbox" name="rp42">Ni facile ni difficile
+
+						<div class="rt">
+						<p><b>5.Que pensez-vous du rythme du cours</b></p>
+						<input type="checkbox" name="rp5">Beaucoup trop rapide
+						<br><input type="checkbox" name="rp51">Un peu trop lent
+						<br><input type="checkbox" name="rp52">Ni trop rapide ni trop lent
+					</div>
+
+						<p><b>6.Pensez-vous que les supports utilisés durant le cours ont été utiles?</b></p>
+						<input type="checkbox" name="rp6">Extrêmement utile
+						<br><input type="checkbox" name="rp61">Très utile
+						<br><input type="checkbox" name="rp62">Pas du tout utile
+
+						<div class="rt">
+						<p><b>7.Quelle est la probabilité que vous recommandiez le cours à d'autres étudiants</b></p>
+						<input type="checkbox" name="rp7">Fortement probable
+						<br><input type="checkbox" name="rp71">Modérément probable
+					</div>
+
+						<p><b>8.Dans l'ensemble êtes-vous satisfait(e) du contenu du cours</b></p>
+						<input type="checkbox" name="rp8">Très satisfait(e)
+						<br><input type="checkbox" name="rp81">Assez satisfait(e)
+
+
+						<div class="rt">
+						<p><b>9.Quel était le niveau global de l'instructeur pour ce cours</b></p>
+						<input type="checkbox" name="rp9">Très bon
+						<br><input type="checkbox" name="rp91">Assez bon
+						<br><input type="checkbox" name="rp92">Faible
+					</div>
+
+						<p><b>10.Le cours était-il bien organisé?</b></p>
+						<input type="checkbox" name="rp10">Très bien organisé
+						<br><input type="checkbox" name="rp101">Assez bien organisé
+						<br><input type="checkbox" name="rp102">Pas du tout organisé
+					
+			
+
+					<div class="col-md-offset-9">
+						<button type="button" class="btn btn-danger" onclick="noter()">ENREGISTRER</button>	
+					</div>
+					</form>
+				</div>
+
+				
+		
+</body>
+</html>
