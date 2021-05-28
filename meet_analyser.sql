@@ -1,6 +1,5 @@
-
-create database GoogleAnalyzer;
-use GoogleAnalyzer
+CREATE database meet_analyzer;
+USE meet_analyzer;
 
 CREATE  TABLE Matiere (
     IdMatiere INT PRIMARY KEY,
@@ -44,7 +43,7 @@ CREATE TABLE Etudiant (
 
 CREATE  TABLE Evaluation (
     IdEtudiant INT primary key,
-    IdSeance INT primary key,
+    IdSeance INT,
     NombrEvaluation INT,
     CONSTRAINT fk_Eval_Etud FOREIGN KEY (IdEtudiant)
     REFERENCES Classe (IdEtudiant),
@@ -57,13 +56,13 @@ CREATE  TABLE Evaluation (
 --creons et  donnons les privilèges à l'utilisateur Professeur
 
 create user Professeur@'%' idenfied by "passer";
-grant select on GoogleAnalyzer.Classe to Professeur@'localhost';
-grant select on GoogleAnalyzer.Matiere to Professeur@'localhost';
-grant all privilèges on GoogleAnalyzer.Seance to Professeur@'localhost';
+grant select on meet_analyzer.Classe to Professeur@'localhost';
+grant select on meet_analyzer.Matiere to Professeur@'localhost';
+grant all privilèges on meet_analyzer.Seance to Professeur@'localhost';
 
 --creons et donnons les privilèges à l'utilisateur Etudiant
 
 create user Etudiant@'%' idenfied by "passer";
-grant select on GoogleAnalyzer.* to Etudiant@'localhost';
+grant select on meet_analyzer.* to Etudiant@'localhost';
 
 
