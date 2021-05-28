@@ -53,7 +53,6 @@ CREATE  TABLE Evaluation (
 );
 
 
--- l'insertion se fera automatiquement 
 
 --donnons les privilèges à l'utilisateur Professeur
 
