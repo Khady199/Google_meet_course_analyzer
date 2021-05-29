@@ -1,6 +1,6 @@
 <?php
 
-	$dsn = 'mysql:host = localhost; dbname = googleanalyzer';
+	$dsn = 'mysql:host = localhost; dbname = meet_analyzer';
 	$username = 'root';
 	$password = '';
 
