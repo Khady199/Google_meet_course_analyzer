@@ -1,5 +1,5 @@
-
-use meet_analyzer;
+CREATE database meet_analyzer;
+USE meet_analyzer;
 CREATE  TABLE Matiere (
     IdMatiere INT PRIMARY KEY,
     NomMatiere VARCHAR(50),
