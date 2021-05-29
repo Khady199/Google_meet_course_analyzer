@@ -1,6 +1,6 @@
 const { getConnectionLink } = require("./db");
 
-//Object used to interact with the database
+//Objet utilisé pour interagir avec la base de données
 const db_link = getConnectionLink();
 
 /**
