@@ -1,7 +1,7 @@
 {
   
     "name": "Récuperation", 
-    "description": "Extension permettant de récupérer des données",
+    "description": "Extension permettant de récupérer des données issues d'une séance",
     "version" : "1.0",
     "manifest_version": 2,
     "permissions" : ["activeTab"],
