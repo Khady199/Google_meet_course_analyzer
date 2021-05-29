@@ -1,0 +1,20 @@
+
+body
+{
+    background-color: cornsilk;
+    color: crimson;
+}
+#button{
+    color: crimson;
+    background-color: cornsilk
+}
+#cours {
+    border: 3px crimson solid;
+    background-color: cornsilk;
+}
+µ.title{
+    text-align: left;
+}
+.classes {
+   text-align: center;
+}
