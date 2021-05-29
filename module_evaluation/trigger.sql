@@ -1,4 +1,4 @@
--- Triggers `Reponse`
+-- Trigger Reponse
 --
 DELIMITER $$
 CREATE TRIGGER `Evaluation` AFTER INSERT ON `Reponse` FOR EACH ROW BEGIN
