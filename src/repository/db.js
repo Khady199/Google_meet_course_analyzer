@@ -2,14 +2,14 @@ let mysql = require("mysql");
 let dotenv = require("dotenv");
 dotenv.config();
 
-// we retrieve the database configuration inside the .env file
+// Nous récupérons la configuration de la base de données dans le fichier .env.
 const host = process.env.DB_HOST;
 const database = process.env.DB_NAME;
 const user = process.env.DB_USER;
 const password = process.env.DB_PASSWORD;
 const port = process.env.DB_PORT;
 
-//Connection configuration
+//configuration de la connexion
 const connection = mysql.createConnection({
   host: host,
   port: port,
@@ -18,7 +18,7 @@ const connection = mysql.createConnection({
   password: password,
 });
 
-//Etablish the connection with the database
+//Etablir la connexion avec la base de données
 function connect() {
   connection.connect((err) => {
     if (!err) {
@@ -28,7 +28,7 @@ function connect() {
     console.log(err);
   });
 }
-//return instance of the current connection
+//retourne l'instance de la connexion actuelle
 function getConnectionLink() {
   return connection;
 }
