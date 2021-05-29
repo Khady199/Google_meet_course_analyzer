@@ -1,1 +1,270 @@
+<html>
+    <head>
+        <title>Evaluation</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css">
+    </head>
+        <body>
+        <h1>Evaluation anonyme d'une séance</h1>
+        <p>
+            Ceci est une évaluation anonyme. Chaque participant peut y intervenir.
+        </p>
+        <form name ="form" action="noteS.php">
+            <p>
+                <fieldset>
+                    <h3> 1- Comment qualifierez-vous la charge de travail demandée par le cours? </h3> <br>
+                    <div class = "left">
+                        <input type="radio" name="r1" value="0" checked>Beaucoup trop importante <br>
+                        <input type="radio" name="r1" value="1">Trop importante <br>
+                        <input type="radio" name="r1" value="2">Ni trop importante ni trop suffisante <br>
+                    </div>
+                    <div class="right">
+                        <input type="radio" name="r1" value="2"> Un peu trop insuffisante <br>
+                        <input type="radio" name="r1" value="1"> Trop insuffisante <br>
+                        <input type="radio" name="r1" value="0">Beaucoup trop suffisante <br>
+                    </div>
+                    
+                </fieldset>
 
+            </p>
+            <p>
+                <fieldset>
+                    <h3> 2- Le cours a t-il répondu à vos attentes?</h3> <br>
+                    <div class="left">
+                        <input type="radio" name="r2" value="4">Très bien répondu <br>
+                        <input type="radio" name="r2" value="3"> Bien répondu <br>
+                        <input type="radio" name="r2" value="2">Assez bien répondu <br>
+                    </div>
+                   <div class="right">
+                        <input type="radio" name="r2" value="1"> Un peu répondu <br>
+                        <input type="radio" name="r2" value="0" checked> Pas du tout  <br>
+                   </div>
+                  
+                   
+                </fieldset>
+                
+            </p>
+            <p>
+                <fieldset>
+                    <h3> 3- Le cours a t-il contribué à votre connaissance en la matière</h3> <br>
+                    <div class="left">
+                        <input type="radio" name="r3" value="4">Enormement contribué <br>
+                        <input type="radio" name="r3" value="3">Beaucoup contribué <br>
+                        <input type="radio" name="r3" value="2">Assez contibué <br>
+
+                    </div>
+                    <div class="right">
+                        <input type="radio" name="r3" value="1"> Peu contribué<br>
+                        <input type="radio" name="r3" value="0" checked> Pas du tout<br>
+                    </div>
+                </fieldset>   
+            </p>
+            <p>
+                <fieldset>
+                    <h3> 4- Comment qualifiez-vous ce cours?</h3> <br>
+                    <div class="left">
+                         <input type="radio" name="r4" value="5">Très facile <br>
+                         <input type="radio" name="r4" value="4">Assez facile <br>
+                         <input type="radio" name="r4" value="3">Ni facile ni difficile <br>
+                    </div>
+                    <div class="right">
+                        <input type="radio" name="r4" value="2"> Assez difficile <br>
+                        <input type="radio" name="r4" value="1"> Très difficile  <br>
+                        <input type="radio" name="r4" value="0"checked> Très difficile et long  <br>
+                    </div>
+                </fieldset>     
+            </p>
+            <p> 
+                <fieldset>
+                        <h3> 5- Que pensez-vous du rythme de ce cours?</h3> <br>
+                    <div class = "left">
+                        <input type="radio" name="r5" value="0">Trop rapide <br>
+                        <input type="radio" name="r5" value="1">Un peu rapide  <br>
+                        <input type="radio" name="r5" value="2">Ni rapide ni lent  <br>
+                    </div>
+                    <div class="right">
+                        <input type="radio" name="r5" value="0" checked> Trop lent <br>
+                    </div>
+                      
+                </fieldset>
+                
+            </p>
+            <p>
+                <fieldset>
+                    <h3> 6- Que dites-vous des supports utilisés lors de ce cours?</h3> <br>
+                    <div class="left">
+                        <input type="radio" name="r6" value="3">Très utiles <br>
+                        <input type="radio" name="r6" value="2">Assez utiles
+                    </div>
+                    <div class="right">
+                        <input type="radio" name="r6" value="1"> Peu utiles<br>
+                        <input type="radio" name="r6" value="0" checked> Pas du tout utiles <br>
+                    </div>
+                </fieldset>   
+            </p>
+            <p>
+                <fieldset>
+                    <h3> 7- Quelle est la probabilité que vous recommandiez ce cours à d'autres étudiants?</h3> <br>
+                    <div class="left">
+                        <input type="radio" name="r7" value="4">Extremement probable <br>
+                        <input type="radio" name="r7" value="3">Fortement probable <br>
+                        <input type="radio" name="r7" value="2">Assez probable  <br>
+                    </div>
+                    <div class="right">
+                        <input type="radio" name="r7" value="1"> Peu probable  <br>
+                        <input type="radio" name="r7" value="0" checked> Pas du tout probable <br>
+                    </div>
+                </fieldset>   
+            </p>
+            <p>
+                <fieldset>
+                    <h3> 8- Dans l'ensemble vous etes satisfait(e) du contenu de ce cours?</h3> <br>
+                    <div class="left">
+                        <input type="radio" name="r8" value="4">Extremement satisfait(e) <br>
+                        <input type="radio" name="r8" value="3">Très satisfait(e) <br>
+                        <input type="radio" name="r8" value="2">Assez satisfait(e) <br>
+                    </div>
+                    <div class="right">
+                        <input type="radio" name="r8" value="1"> Peu insuffisant(e)  <br>
+                        <input type="radio" name="r8" value="0" checked> Très insuffisant(e) <br>
+                    </div>
+                </fieldset>  
+            </p>
+            <p>
+                <fieldset>
+                    <h3> 9- Dans l'ensemble, quel est le degrès de satisfaction concernant ce cours?</h3> <br>
+                    <div class="left">
+                        <input type="radio" name="r9" value="4">Extremement satisfait(e) <br>
+                        <input type="radio" name="r9" value="3"> Très satisfait(e) <br>
+                        <input type="radio" name="r9" value="2">Assez satisfait(e) <br>
+                    </div>
+                    <div class="right">
+                        <input type="radio" name="r9" value="1"> Peu insuffisant(e)  <br>
+                        <input type="radio" name="r9" value="0"checked> Très insuffisant(e) <br>
+                    </div>
+                </fieldset> 
+            </p>
+            <p>
+                <fieldset>
+                    <h3> 10- Si vous avez d'autres suggestions ou commentaires, merci de nous en faire part.</h3> <br>
+                    <textarea name="reponse" id="" cols="30" rows="10"></textarea>
+    
+                </fieldset>    
+            </p>
+            <p>
+                <fieldset>
+                    <h3> 11- Quel était le niveau de qualité global de l'instructeur pour ce cours?</h3> <br>
+                    <div class="left">
+                        <input type="radio" name="r11" value="4">Excellent(e) <br>
+                        <input type="radio" name="r11" value="3">Très bon(ne) <br>
+                        <input type="radio" name="r11" value="2">Bon(ne) <br>
+                    </div>
+                    <div class="right">
+                        <input type="radio" name="r11" value="1"> Faible  <br>
+                        <input type="radio" name="r11" value="0" checked> Nul(le) <br>
+                    </div>
+                </fieldset>
+            </p>
+            <p>
+                <fieldset>
+                    <h3> 12- Le cours était-il bien organisé?</h3><br>
+                    <div class="left">
+                        <input type="radio" name="r12" value="3">Très bien organisé <br>
+                        <input type="radio" name="r12" value="2">Assez bien organisé <br>
+                    </div>
+                    <div class="right">
+                        <input type="radio" name="r12" value="1"> Pas très bien organisé  <br>
+                        <input type="radio" name="r12" value="0"checked> Mal organisé <br>
+                    </div>
+                </fieldset>  
+            </p>
+            <p>
+                <fieldset>
+                    <h3> 13- Quel était votre niveau de connaissance du sujet de ce cours de l'instructeur?</h3> <br>
+                    <div class="left">
+                        <input type="radio" name="r13" value="4">Excellent niveau de connaissance <br>
+                        <input type="radio" name="r13" value="3">Tres bon niveau de connaissance <br>
+                        <input type="radio" name="r13" value="2">Bon niveau de connaissance  <br>
+                    </div>
+                    <div class="right">
+                        <input type="radio" name="r13" value="1"> Niveau de connaissance faible  <br>
+                        <input type="radio" name="r13" value="0"checked> Aucune connaissance <br>       
+                    </div>
+                </fieldset>  
+            </p>
+            <p>
+                <fieldset>
+                    <h3> 14- Les explications de l'instructeur étaient-elles claires?</h3> <br>
+                    <div class="left">
+                        <input type="radio" name="r14" value="4">Extremement claires <br>
+                        <input type="radio" name="r14" value="3">Très claires <br>
+                        <input type="radio" name="r14" value="2">Assez claires<br>
+                    </div>
+                    <div class="right">
+                        <input type="radio" name="r14" value="1"> Pas claires  <br>
+                        <input type="radio" name="r14" value="0"checked> Pas du tout claires <br>
+                    </div>
+                </fieldset>   
+            </p>
+            <p>     
+                <fieldset>
+                    <h3> 15- De quelle manière l'instructeur était-il concerné par l'apprentissage des étudiants dans ce cours?</h3> <br>
+                    <div class="left">
+                        <input type="radio" name="r15" value="4">Extremement concerné <br>
+                        <input type="radio" name="r15" value="3">Très concerné <br>
+                        <input type="radio" name="r15" value="2" >Assez concerné <br>
+                    </div>
+                    <div class="right">
+                        <input type="radio" name="r15" value="1"> Peu concerné  <br>
+                        <input type="radio" name="r15" value="0" checked> Pas du tout concerné <br>
+                    </div>
+                </fieldset>
+            </p>
+            <p>
+                <fieldset>
+                    <h3> 16- L'instructeur avait-il une attitude encourageante envers les étudiants?</h3> <br>
+                    <div class="left">
+                        <input type="radio" name="r16" value="3">Très encourageante <br>
+                        <input type="radio" name="r16" value="2">Assez encourageante <br>
+                    </div>
+                    <div class="right">
+                        <input type="radio" name="r16" value="1"> Peu encourageante  <br>
+                        <input type="radio" name="r16"value="0" checked> Pas du tout encourageante <br>  
+                    </div>
+                </fieldset>
+            </p>
+            <p>
+                <fieldset>
+                    <h3> 17- L'intructeur était-il disponible en dehors du cours?</h3> <br>
+                    <div class = left>
+                        <input type="radio" name="r17" value="3">Très disponible <br>
+                        <input type="radio" name="r17" value="2">Assez disponible
+                    </div>
+                    <div class="right">
+                        <input type="radio" name="r17" value="1"> Peu disponible  <br>
+                        <input type="radio" name="r17" value="0"checked> Pas du tout disponible <br>
+                    </div>
+                </fieldset>    
+            </p>
+            <p>
+                <fieldset>
+                    <h3> 18- Dans quelle mesure les critères d'évaluation du cours étaient-ils clairs?</h3> <br>
+                    <div class="left">
+                        <input type="radio" name="r18" value="4">Extremement clairs <br>
+                        <input type="radio" name="r18" value="3">Très clairs <br>
+                        <input type="radio" name="r18" value="2">Assez clairs  <br>
+                    </div>
+                    <div class="right">
+                        <input type="radio" name="r18" value="1"> Peu clairs <br>
+                        <input type="radio" name="r18" value="0"checked> Pas du tout clair <br>
+                        
+                    </div>
+                </fieldset>  
+            </p>
+        
+        <div class="monbutton">
+            <input type="submit" value="Terminé" id="ter">
+        </div>
+	</form>
+    </body>
+</html>
