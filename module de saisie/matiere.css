@@ -1,0 +1,14 @@
+html,body
+{
+    align-self: center;
+    background-color: cornsilk;
+    color: crimson;
+    place-items: center;
+    width: 100% ;
+    height: 100% ;
+    display: inline;
+}
+#button{
+    color: crimson;
+    background-color: cornsilk
+}

@@ -1,0 +1,29 @@
+{
+  
+    "name": "Récuperation", 
+    "description": "Extension permettant de récupérer des données",
+    "version" : "1.0",
+    "manifest_version": 2,
+    "permissions" : ["activeTab"],
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "js": ["interaction.js"],
+            "css": ["style.css"]
+        }
+    ],
+
+    "browser_action": {
+        "default_icon": { 
+          "128": "/images/icon128.png"
+        },
+        "default_popup": "index.html"
+      },
+
+      
+    "icons": {
+          "128": "/images/icon128.png"
+      }
+
+
+}
