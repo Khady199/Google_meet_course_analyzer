@@ -1,7 +1,7 @@
 /**
- *Fichier routeur pour l'objet seance
- * Ce fichier contient une méthode pour traiter
- * les requêtes GET et POST pour le participant
+ *Router file for the session object
+ * This file contains a method for handling
+ * GET and POST requests for the participant
  */
  const router = require("express").Router();
  const { getParticipantById, addParticipant, getAllParticipant } = require("../service/participant.service");
