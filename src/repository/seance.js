@@ -1,6 +1,6 @@
 /**
- * This file contains methods used to interact with the database
- * It contains functions related to seance CRUD
+ *  Ce fichier contient les méthodes utilisées pour interagir avec la base de données
+ * Il contient les fonctions liées au CRUD de la séance
  */
 
 const { getConnectionLink } = require("./db");
