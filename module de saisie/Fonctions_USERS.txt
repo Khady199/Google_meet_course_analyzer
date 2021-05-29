@@ -1,0 +1,15 @@
+evenement:  call_ended
+
+les differents parametres: 
+
+conference_id (de type String , identificateur unique de la reunion)
+
+duration_seconds( de type Integer, duree pendant laquelle le participant est resté dans la reunion)
+
+identifier(de type String, identificateur participant unique soit mail ou num tel)
+
+identifier_type (de type String avec le sous parametres email_addess qui donne l'adresse mail du participant)
+
+location_region( de type String, la ville ou le participant a adhere)
+
+s
