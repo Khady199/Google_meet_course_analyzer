@@ -1,7 +1,7 @@
 const seanceReposiroty = require("../repository/seance");
 
 /**
- * Retrieve seance by his Id
+ * Récupérer par son participant Id
  * @param {Seance Id} id
  * @returns Seance or empty array
  */
